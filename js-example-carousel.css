@@ -1,17 +1,27 @@
 html {
     padding: 0;
     margin: 0;
+    background-color: aqua;
 }
 
-.carousel {
-    background-color: red;
+
+#example-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    background-color: black;
     border: 1px solid black;
+    padding-bottom: 30px;
 }
 
-.carousel p {
+#example-carousel p {
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 70px;
+    text-transform: uppercase;
+    color: white;
 }
 
 .carousel-item img {
@@ -29,8 +39,21 @@ html {
 
 .carousel-item img {
     width: 95%;
-    max-width: 900px;
+    max-width: 1000px;
     height: auto;
+    margin-left: 20px;
+}
+
+#carousel-images {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    max-width: 900px;
+    
 }
 
 .carousel-actions {
@@ -64,3 +87,6 @@ html {
         opacity: 1;
     }
 }
+
+
+
