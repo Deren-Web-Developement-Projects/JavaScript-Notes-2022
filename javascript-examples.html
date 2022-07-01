@@ -32,17 +32,16 @@
     <div id="example-cc-valid">
         <div>Credit Card Number Validator</div>
         <label> Card Number
-            <input type="text">
+            <input id="cc-input" type="text" maxlength="19">
         </label>
-        <button>
+        <button id="cc-submit">
             Check
         </button>
-        <div>
-            not valid
-        </div>
+        <div id="cc-output"></div>
     </div>
     
 
     <script src="javascript-examples.js"></script>
+    <script src="js-example-ccValid.js"></script>
 </body>
 </html>

@@ -2,7 +2,42 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: red;
+    background-color: #e07e77;
     border: 1px solid black;
     margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+#example-cc-valid div {
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+#example-cc-valid label {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+#cc-submit {
+    margin-bottom: 5px;
+    width: 180px;
+    height: 30px;
+}
+
+#cc-submit:hover {
+    background-color: #a1453f;
+    color: white;
+}
+
+#cc-output {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid black;
 }
