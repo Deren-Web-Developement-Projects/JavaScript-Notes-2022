@@ -10,6 +10,7 @@
 // #region Array Methods
 // ! METHODS 
 let arrayMethods = ['March', 'Jan', 'Feb', 'Dec'];
+let arrayMethodsNum = [1,2,3,4];
 
 // * SORT
 arrayMethods.sort();
@@ -25,6 +26,12 @@ arrayMethods.includes('valueToCheck');
 
 // * EVERY
 arrayMethods.every(item => item < 40);
+
+// * REDUCE
+// * The "0" is the initial value
+const sumWithInitialValue = arrayMethodsNum.reduce(
+    (previousValue, currentValue) => previousValue + currentValue, 0  
+);
 
 // #endregion
 
@@ -225,7 +232,27 @@ class Dog {
     get name() {
         return this._name;
     }
+
+    // * Static methods can not be accessed by child classes
+    // * Static methods can only be called by the class, not by instances
+    // * Ex: Dog.generateName();
+    static generateName() {
+        const names = ['Joe', 'Mama', 'Bob', 'Uncle'];
+        const randomName = Math.floor(Math.random()*4);
+        return names[randomName];
+    }
 }
+
+// ! Extend - inherit from the parent class
+class Sheltie extends Dog {
+    constructor(name, color) {
+        super(name);
+        this._color = color;
+        // * Super calls the constructor in the parent class
+        // * Call super items before "this" items
+    }
+}
+
 // * Have to include "new" to create a new instance of the class
 const halley = new Dog('Halley');
 
