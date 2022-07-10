@@ -216,11 +216,17 @@ sortSpeciesByTeeth(speciesArray);
 // ! CONSTRUCTOR
 class Dog {
     // * Constructor creates a new instance of a class
+    // * Methods are same as an object but no comma
     constructor(name) {
         this._name = name;
         this._behavior = 0;
     }
+
+    get name() {
+        return this._name;
+    }
 }
+// * Have to include "new" to create a new instance of the class
 const halley = new Dog('Halley');
 
 // #endregion
