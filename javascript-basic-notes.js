@@ -212,6 +212,19 @@ sortSpeciesByTeeth(speciesArray);
 
 // #endregion
 
+// #region Classes
+// ! CONSTRUCTOR
+class Dog {
+    // * Constructor creates a new instance of a class
+    constructor(name) {
+        this._name = name;
+        this._behavior = 0;
+    }
+}
+const halley = new Dog('Halley');
+
+// #endregion
+
 // #region
 
 // #endregion
