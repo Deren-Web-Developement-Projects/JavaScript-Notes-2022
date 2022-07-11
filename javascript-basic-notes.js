@@ -258,6 +258,20 @@ const halley = new Dog('Halley');
 
 // #endregion
 
+// #region Async Promises
+// ! PROMISE CONSTRUCTOR
+const executorFunction = (resolve, reject) => {
+    if (true) {
+        resolve(`I resolved!`);
+    } else {
+        reject(`I rejected`);
+    }
+}
+const myFirstPromise = new Promise(executorFunction);
+
+// #endregion
+
+
 // #region
 
 // #endregion
